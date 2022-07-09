@@ -37,3 +37,46 @@ content-type: application/json
     "username": "julio",
     "password": "batatinha"
 }
+
+### Create delivery
+
+POST http://localhost:3000/delivery/ HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhlbGVuYSIsImlhdCI6MTY1NzM1NjMzNSwiZXhwIjoxNjU3NDQyNzM1LCJzdWIiOiI5NmNlYjg3YS1lMTFmLTQxNmYtYjY3NC0xOTZjZjc3OGMwNGEifQ.Svw-lvWQCcH9cOnMG_D772O93XCdHXyNAs45LE2SnEs
+
+{
+    "item_name": "Lanche"
+}
+
+### Find all available deliveries
+
+GET http://localhost:3000/delivery/available/ HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhlbGVuYSIsImlhdCI6MTY1NzM1NjMzNSwiZXhwIjoxNjU3NDQyNzM1LCJzdWIiOiI5NmNlYjg3YS1lMTFmLTQxNmYtYjY3NC0xOTZjZjc3OGMwNGEifQ.Svw-lvWQCcH9cOnMG_D772O93XCdHXyNAs45LE2SnEs
+
+### Accept Delivery
+
+PUT http://localhost:3000/delivery/updateDeliveryman/7922c269-aa4c-4513-aee5-680ceec0e76b HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imp1bGlvIiwiaWF0IjoxNjU3MzU4MTk0LCJleHAiOjE2NTc0NDQ1OTQsInN1YiI6Ijg0MWU1MDA5LTI3ZjQtNGMyNi1hY2MxLTcwZWQyZWFlNDVjNCJ9.SZQmm_EnKUuHMgClXzfid7JODKgQQleoup7gTGpUT4g
+
+### Find all deliveries created by client
+
+GET http://localhost:3000/delivery/clients/ HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhlbGVuYSIsImlhdCI6MTY1NzM1NjMzNSwiZXhwIjoxNjU3NDQyNzM1LCJzdWIiOiI5NmNlYjg3YS1lMTFmLTQxNmYtYjY3NC0xOTZjZjc3OGMwNGEifQ.Svw-lvWQCcH9cOnMG_D772O93XCdHXyNAs45LE2SnEs
+
+### Find all deliveries by deliveryman
+
+GET http://localhost:3000/delivery/deliveryman/ HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imp1bGlvIiwiaWF0IjoxNjU3MzU4MTk0LCJleHAiOjE2NTc0NDQ1OTQsInN1YiI6Ijg0MWU1MDA5LTI3ZjQtNGMyNi1hY2MxLTcwZWQyZWFlNDVjNCJ9.SZQmm_EnKUuHMgClXzfid7JODKgQQleoup7gTGpUT4g
+
+### End Delivery
+
+PUT http://localhost:3000/delivery/updateEndDate/7922c269-aa4c-4513-aee5-680ceec0e76b HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imp1bGlvIiwiaWF0IjoxNjU3MzU4MTk0LCJleHAiOjE2NTc0NDQ1OTQsInN1YiI6Ijg0MWU1MDA5LTI3ZjQtNGMyNi1hY2MxLTcwZWQyZWFlNDVjNCJ9.SZQmm_EnKUuHMgClXzfid7JODKgQQleoup7gTGpUT4g
+
+###
+
