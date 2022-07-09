@@ -1,0 +1,39 @@
+### Create client
+
+POST http://localhost:3000/client/ HTTP/1.1
+content-type: application/json
+
+{
+    "username": "helena",
+    "password": "batatinha"
+}
+
+### Authenticate client
+
+POST http://localhost:3000/client/authenticate/ HTTP/1.1
+content-type: application/json
+
+{
+    "username": "helena",
+    "password": "batatinha"
+}
+
+### Create deliveryman
+
+POST http://localhost:3000/deliveryman/ HTTP/1.1
+content-type: application/json
+
+{
+    "username": "julio",
+    "password": "batatinha"
+}
+
+### Authenticate deliveryman
+
+POST http://localhost:3000/deliveryman/authenticate/ HTTP/1.1
+content-type: application/json
+
+{
+    "username": "julio",
+    "password": "batatinha"
+}
